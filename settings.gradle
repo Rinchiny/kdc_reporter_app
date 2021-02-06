@@ -1,1 +1,3 @@
 rootProject.name = 'kdc_reporter_app'
+
+include(":frontend", ":backend")

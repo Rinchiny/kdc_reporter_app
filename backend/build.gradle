@@ -6,20 +6,20 @@ plugins {
 
 group = 'ru.boost.charity'
 version = '0.0.1'
-
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
+//
+//configurations {
+//    compileOnly {
+//        extendsFrom annotationProcessor
+//    }
+//}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    runtimeOnly(project(":frontend"))
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
